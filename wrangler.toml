@@ -1,0 +1,17 @@
+name = "worker-typescript-template"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[miniflare]
+host = "127.0.0.1"                 # --host
+port = 1337                        # --port
+watch = true                       # --watch
+live_reload = true                 # --live-reload
